@@ -5,6 +5,6 @@
     %h2= params['msg']
     %h3 Enter your phone number to receive an automated reminder
 
-= form_tag :action => '/appointmentreminder/makecall' do
-   = text_field_tag 'number'
-   = submit_tag 'Call Me!'
+= form_tag :action => '/makecall' do
+  = text_field_tag 'number'
+  = submit_tag 'Call Me!'

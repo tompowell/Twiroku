@@ -8,7 +8,7 @@ class AppointmentreminderController < ApplicationController
   BASE_URL = "http://localhost:3000/appointmentreminder"
  
   # Outgoing Caller ID you have previously validated with Twilio
-  CALLER_ID = '13474394098'
+  CALLER_ID = '14155992671'
  
   def index
   end
@@ -22,10 +22,11 @@ class AppointmentreminderController < ApplicationController
  
     # parameters sent to Twilio REST API
     data = {
-      :from => CALLER_ID,
+      :from => '14155992671',
       :to => params['number'],
       :url => BASE_URL + '/reminder',
     }
+ 
  
     begin
       client = Twilio::REST::Client.new(ACCOUNT_SID, ACCOUNT_TOKEN)

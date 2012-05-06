@@ -29,7 +29,19 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem "babelphish"
+gem "uploader"
+gem "muck-engine"
+gem "muck-users"
+gem "muck-comments"
+gem "muck-contents"
+gem "muck-profiles"
+gem "muck-activities"
+gem "muck-friends"
+gem "muck-shares"
+gem "muck-invites"
+gem "muck-services"
+gem "muck-auth"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
